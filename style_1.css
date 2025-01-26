@@ -1,0 +1,37 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Dancing Script', cursive; /* Updated body font to Dancing Script */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', cursive; /* Updated heading font to Dancing Script */
+}
+
+/* Menu Section Styles */
+.menu-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-links li {
+  margin: 10px 0;
+}
+
+.menu-links a {
+  font-size: 1.2rem;
+  color: #dc3545;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu-links a:hover {
+  color: #a71d2a;
+}
+
+/* Additional styles from the original CSS remain unchanged */
