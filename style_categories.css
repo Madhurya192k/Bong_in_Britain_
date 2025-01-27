@@ -1,31 +1,54 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-
-/* Category Page Styles */
-.category-page {
-  background-color: white; /* White background */
-  font-family: 'Dancing Script', cursive; /* Apply Dancing Script font */
-  color: #333; /* Neutral text color for readability */
-  line-height: 1.8; /* Increase line spacing */
-  padding: 20px; /* Add padding for spacing */
-}
-
-.category-page h2 {
-  text-align: left; /* Align heading to the left */
-  font-size: 2.5rem; /* Large, elegant font size */
-  margin-bottom: 50px; /* Add spacing below the heading */
-  font-family: 'Dancing Script', cursive; /* Ensure heading uses Dancing Script */
-  color: #dc3545; /* Add a red color to the heading for contrast */
-}
-
-.category-page ul {
-  list-style-type: none; /* Remove bullet points */
-  padding: 0; /* Remove padding from the list */
-}
-
-.category-page ul li {
-  text-align: left; /* Left-align list items */
-  font-size: 1.5rem; /* Larger font size for easier readability */
-  font-family: 'Dancing Script', cursive; /* Ensure list items use Dancing Script */
-  margin-bottom: 30px; /* Add spacing between items */
-}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Default font for body text */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background for better readability */
+    color: #333; /* Neutral text color for body */
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #dc3545; /* Red background for navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 900px; /* Limit the width for better focus */
+    margin: 0 auto; /* Center-align the container */
+    padding: 20px; /* Add padding around the container */
+  }
+  
+  /* Heading Style */
+  .menu-heading {
+    text-align: center; /* Center-align heading */
+    font-family: 'Dancing Script', cursive; /* Use an elegant font for headings */
+    font-size: 2.5rem; /* Larger font size for heading */
+    margin-bottom: 30px; /* Add spacing below the heading */
+    color: #dc3545; /* Red color for the heading */
+  }
+  
+  /* List Style */
+  .menu-list {
+    list-style-type: disc; /* Add bullets for list items */
+    padding-left: 30px; /* Indent the list items */
+    margin: 0; /* Remove default margins */
+  }
+  
+  .menu-list li {
+    text-align: left; /* Left-align list items */
+    font-size: 1.2rem; /* Slightly larger font for readability */
+    margin-bottom: 15px; /* Add space between list items */
+    color: #333; /* Neutral color for list text */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #dc3545; /* Red background for footer */
+    color: white; /* White text for footer */
+    text-align: center; /* Center-align footer text */
+    padding: 15px 0; /* Add padding to the footer */
+    font-size: 0.9rem; /* Slightly smaller font for footer */
+  }
+  
