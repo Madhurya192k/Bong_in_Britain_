@@ -3,37 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhajis (Bhaja/Torkari) | Bong In Britain</title>
-  <link rel="stylesheet" href="style_categories.css"> <!-- Universal stylesheet -->
+  <title>Bhajis (Bhaja/Torkari)  | Bong In Britain</title>
+  <link rel="stylesheet" href="style_categories.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .menu-item {
+      background: #f8d7da;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .description {
+      display: none;
+      background: #fff3cd;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
       <a class="navbar-brand" href="index.html">Bong In Britain</a>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <div class="container py-5">
-    <h2 class="menu-heading">Bhajis (Bhaja/Torkari)</h2>
-    <ul class="menu-list">
-      <li>Lau Chingri</li>
-      <li>Aloo Posto</li>
-      <li>Maacher Matha Diye Kata Chochori (Katla/Ilish)</li>
-      <li>Paanch Mishali Torkari</li>
-      <li>Bori/Chine Badam Diye Sakh Bhaja</li>
-      <li>Aloo Bharta</li>
-      <li>Begun Bharta</li>
-      <li>Dim Bharta</li>
-      <li>Daal Chingri Bharta</li>
-      <li>Loita Maacher Jhuri</li>
-    </ul>
+  <div class="container">
+    <h2 class="menu-heading">Bhajis (Bhaja/Torkari) </h2>
+    
+    <div class="menu-item">Lau Chingri  - £6.5 </div>
+    <div class="description">Tender bottle gourd cooked with juicy prawns in a delicately spiced curry.</div>
+
+    <div class="menu-item">Aloo Posto - £6.5</div>
+    <div class="description">Soft, golden potatoes simmered in a creamy poppy seed sauce—a true Bengali classic. </div>
+
+    <div class="menu-item">Maacher Matha Diye Kata Chochori - £8</div>
+    <div class="description">Mixed vegetables cooked with the bold flavors of fish head (Katla/Ilish), creating a traditional 
+      delicacy.</div>
+
+    <div class="menu-item">Paanch Mishali Torkari - £5</div>
+    <div class="description">A medley of five seasonal vegetables, cooked in mustard oil and spices.</div>
+
+    <div class="menu-item">Bori/Chine Badam Diye Sakh Bhaja - £5</div>
+    <div class="description">Stir-fried leafy greens combined with lentil dumplings and crunchy peanuts.</div>
+
+    <div class="menu-item">Aloo Bharta  - £5</div>
+    <div class="description">Mashed boiled potatoes mixed with mustard oil, onions, and green chilies for a comforting, 
+        flavorful side.</div>
+
+    <div class="menu-item">Begun Bharta - £5</div>
+    <div class="description">Smoked and mashed eggplant blended with mustard oil and subtle spices.</div>
+
+    <div class="menu-item">Dim Bharta  - £6</div>
+    <div class="description">Spiced mashed boiled eggs with mustard oil and onions.</div>
+
+    <div class="menu-item">Daal Chingri Bharta  - £6.5</div>
+    <div class="description">A unique mash of prawns and lentils, bursting with savory flavors.</div>
+
+    <div class="menu-item">Loita Maacher Jhuri - £8</div>
+    <div class="description">Shredded Bombay duck fish, stir-fried with spices into a savory dry preparation. </div>
   </div>
 
-  <!-- Footer -->
   <footer class="bg-danger text-center text-white py-3">
     <p>&copy; 2025 Bong In Britain. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    $(document).ready(function(){
+      $(".menu-item").click(function(){
+        $(this).next(".description").slideToggle();
+      });
+    });
+  </script>
+
 </body>
 </html>
