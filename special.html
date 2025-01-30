@@ -3,36 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chef's Special | Bong In Britain</title>
-  <link rel="stylesheet" href="style_categories.css"> <!-- Link to the universal stylesheet -->
+  <title>Chef’s Special    | Bong In Britain</title>
+  <link rel="stylesheet" href="style_categories.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .menu-item {
+      background: #f8d7da;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .description {
+      display: none;
+      background: #fff3cd;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
       <a class="navbar-brand" href="index.html">Bong In Britain</a>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <div class="container py-5">
-    <h2 class="menu-heading">Chef's Special</h2>
-    <ul class="menu-list">
-        <li>Didar haater chhanar dalna </li>
-        <li>Maa er haater  katla maach bhaja </li>
-        <li>Uma pishir bhaja begun bharta </li>
-        <li>Thammar haater koraishutir kochuri chholar daal </li>
-        <li>Basa Platter </li>
-        <li>Chicken continental platter </li>
-        <li>Pineapple based Chicken Tandoori </li>
-        <li>Roasted Chicken with coleslaw </li>
-        <li>Roasted chicken with seasonal veggies and fruits </li>
-      </ul>
+  <div class="container">
+    <h2 class="menu-heading">Chef’s Special   </h2>
+    
+    <div class="menu-item">Didar Haater Chhanar Dalna (4pcs)   - £6 </div>
+    <div class="description">A nostalgic home-style paneer curry made with soft chhana (fresh cottage cheese) simmered 
+        in a lightly spiced tomato-based gravy. A soulful dish with a personal touch from the chef.  </div>
+
+    <div class="menu-item">Maa Er Haater Katla Maach Bhaja (2pcs)  - £10</div>
+    <div class="description">Simply fried Katla fish with minimal spices, cooked the way Bengali mothers do—crispy on 
+        the outside, tender inside, and bursting with authentic flavors.   </div>
+
+    <div class="menu-item">Uma Pishir Bhaja Begun Bharta   - £7</div>
+    <div class="description">Smoky mashed eggplant blended with mustard oil, onions, and green chilies, following a 
+        treasured family recipe handed down by Uma Pishi. </div>
+
+    <div class="menu-item">Thammar Haater Koraishutir Kochuri Chholar Daal (4 pcs)  - £10</div>
+    <div class="description">Flaky puris stuffed with spiced green peas, paired with a flavorful, mildly sweet chholar dal 
+        (Bengal gram curry). This comforting combination is straight from Thamma’s 
+        (grandmother’s) kitchen. </div>
+
+    <div class="menu-item">Basa Platter  - £12</div>
+    <div class="description">A delightful seafood meal featuring tender Basa fish fillets, served with a selection of sides to 
+        enhance the dining experience. </div>
+
+    <div class="menu-item">Pineapple-Based Chicken Tandoori   - £15</div>
+    <div class="description">Juicy chicken marinated with spices and pineapple, grilled to perfection for a smoky, tangy, 
+        and slightly sweet flavor.   </div>
+
+    <div class="menu-item">Roasted Chicken with Coleslaw  - £20</div>
+    <div class="description">Tender roasted chicken served with a creamy, tangy coleslaw that balances the flavors 
+        beautifully.  </div>
+
+    <div class="menu-item">Roasted Chicken with Seasonal Veggies and Fruits   - £20</div>
+    <div class="description">A wholesome meal featuring perfectly roasted chicken, vibrant seasonal vegetables, and fresh 
+        fruits for a refreshing finish.  </div>
   </div>
 
-  <!-- Footer -->
   <footer class="bg-danger text-center text-white py-3">
     <p>&copy; 2025 Bong In Britain. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    $(document).ready(function(){
+      $(".menu-item").click(function(){
+        $(this).next(".description").slideToggle();
+      });
+    });
+  </script>
+
 </body>
 </html>
