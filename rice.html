@@ -3,39 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rice/ Noodles | Bong In Britain</title>
-  <link rel="stylesheet" href="style_categories.css"> <!-- Link to the universal stylesheet -->
+  <title>Rice/Noodles  | Bong In Britain</title>
+  <link rel="stylesheet" href="style_categories.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .menu-item {
+      background: #f8d7da;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .description {
+      display: none;
+      background: #fff3cd;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
       <a class="navbar-brand" href="index.html">Bong In Britain</a>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <div class="container py-5">
-    <h2 class="menu-heading">Rice/ Noodles</h2>
-    <ul class="menu-list">
-      <li>Basonti Pulao</li>
-      <li>Keema Pulao</li>
-      <li>Peas Pulao</li>
-      <li>Jeera Rice</li>
-      <li>Saffron Rice</li>
-      <li>Garlic Rice</li>
-      <li>Morog Pulao</li>
-      <li>Kolkata Style Chicken Biriyani</li>
-      <li>Kolkata Style Mutton Biriyani</li>
-      <li>Kolkata Mixed Chowmein</li>
-      <li>Steamed Basmati Rice</li>
-      <li>Ghee Bhaat</li>
-    </ul>
+  <div class="container">
+    <h2 class="menu-heading">Rice/Noodles </h2>
+    
+    <div class="menu-item">Basonti Pulao  - £6 </div>
+    <div class="description">A fragrant and mildly sweet yellow rice preparation infused with aromatic spices like bay leaves and cardamom, cooked with a generous drizzle of ghee and garnished with raisins and  cashew nuts. This celebratory dish is often enjoyed during special occasions.</div>
+
+    <div class="menu-item">Keema Pulao - £8</div>
+    <div class="description">Flavorful basmati rice cooked with spiced, juicy minced meat (keema), creating a hearty and aromatic one-pot meal. The rich spices blend perfectly with the tender keema, making it a delightful option for meat lovers. </div>
+
+    <div class="menu-item">Peas Pulao - £6</div>
+    <div class="description">Light, fluffy basmati rice cooked with vibrant green peas and subtly spiced with bay leaves and cloves. This simple yet flavorful preparation is perfect as a side dish or a light meal.</div>
+
+    <div class="menu-item">Jeera Rice - £6</div>
+    <div class="description">Basmati rice delicately tempered with aromatic cumin seeds and whole spices, providing a simple yet flavorful accompaniment to any curry or dal. </div>
+
+    <div class="menu-item">Saffron Rice - £6</div>
+    <div class="description">Basmati rice cooked with fragrant saffron strands, lending a luxurious golden hue and subtle floral aroma to this elegant dish.</div>
+
+    <div class="menu-item">Garlic Rice  - £6</div>
+    <div class="description">A savory delight where fluffy rice is stir-fried with aromatic garlic, offering a punch of flavor with every bite. Ideal for pairing with grilled meats and curries.</div>
+
+    <div class="menu-item">Morog Pulao - £10</div>
+    <div class="description">A regal one-pot dish where succulent pieces of chicken are cooked with fragrant rice, aromatic spices, and caramelized onions. This dish embodies a perfect balance of flavors and textures, often reserved for festive meals. </div>
+
+    <div class="menu-item">Kolkata Style Chicken Biryani   - £10</div>
+    <div class="description">A beloved Kolkata classic featuring long-grain basmati rice layered with juicy chicken pieces, golden potatoes, and boiled eggs, all cooked together with aromatic spices. The subtle balance of flavors makes it a culinary masterpiece. </div>
+
+    <div class="menu-item">Kolkata Style Mutton Biryani   - £14</div>
+    <div class="description">A rich and flavorful rice dish where tender, slow-cooked mutton pieces are layered with fragrant basmati rice, perfectly spiced potatoes, and boiled eggs. This signature Bengali biryani is known for its subtle flavors and aromatic goodness.</div>
+
+    <div class="menu-item">Kolkata Mixed Chowmein - £8</div>
+    <div class="description">Stir-fried noodles tossed with a vibrant mix of chicken, fresh vegetables, and aromatic spices. This street-style favorite from Kolkata offers a delightful blend of crunch and spice.  </div>
+
+    <div class="menu-item">Steamed Basmati Rice - £4</div>
+    <div class="description">Simple, fluffy, and aromatic basmati rice, steamed to perfection, making it a versatile base for any curry or side dish.   </div>
+    
+    <div class="menu-item">Ghee Bhaat  - £5</div>
+    <div class="description">Comfort food at its finest—steamed rice lightly tossed in fragrant ghee, offering a buttery and aromatic indulgence, often served with fried items or simple dals.   </div>
   </div>
 
-  <!-- Footer -->
   <footer class="bg-danger text-center text-white py-3">
     <p>&copy; 2025 Bong In Britain. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    $(document).ready(function(){
+      $(".menu-item").click(function(){
+        $(this).next(".description").slideToggle();
+      });
+    });
+  </script>
+
 </body>
 </html>
