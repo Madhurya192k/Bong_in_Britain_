@@ -5,31 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daal | Bong In Britain</title>
   <link rel="stylesheet" href="style_categories.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .menu-item {
+      background: #f8d7da;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .description {
+      display: none;
+      background: #fff3cd;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
       <a class="navbar-brand" href="index.html">Bong In Britain</a>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <div class="container py-5">
+  <div class="container">
     <h2 class="menu-heading">Daal</h2>
-    <ul class="menu-list">
-      <li>Postor Bora</li>
-      <li>Maacher Matha Diye Moong Daal</li>
-      <li>Veg Daal</li>
-      <li>Tetor Daal</li>
-      <li>Aam Daal</li>
-      <li>Masoor Daal</li>
-    </ul>
+
+    <div class="menu-item">Maacher Matha Diye Moong Daal - £7</div>
+    <div class="description">Moong dal with fish head, offering an earthy, savory flavor.</div>
+
+    <div class="menu-item">Veg Daal - £5</div>
+    <div class="description">A wholesome vegetarian lentil dish cooked with aromatic spices for a comforting meal.</div>
+
+    <div class="menu-item">Toor Daal - £5</div>
+    <div class="description">Bitter gourd simmered with lentils, balancing health benefits with a refreshingly bitter undertone.</div>
+
+    <div class="menu-item">Aam Daal - £5</div>
+    <div class="description">Tangy lentil curry infused with the refreshing taste of raw mango.</div>
+
+    <div class="menu-item">Masoor Daal - £4</div>
+    <div class="description">Simple yet flavorful red lentil soup with mild spices.</div>
   </div>
 
-  <!-- Footer -->
   <footer class="bg-danger text-center text-white py-3">
     <p>&copy; 2025 Bong In Britain. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    $(document).ready(function(){
+      $(".menu-item").click(function(){
+        $(this).next(".description").slideToggle();
+      });
+    });
+  </script>
+
 </body>
 </html>
