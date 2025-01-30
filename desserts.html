@@ -4,31 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desserts and Drinks  | Bong In Britain</title>
-  <link rel="stylesheet" href="style_categories.css"> <!-- Link to the universal stylesheet -->
+  <link rel="stylesheet" href="style_categories.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .menu-item {
+      background: #f8d7da;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .description {
+      display: none;
+      background: #fff3cd;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
       <a class="navbar-brand" href="index.html">Bong In Britain</a>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <div class="container py-5">
+  <div class="container">
     <h2 class="menu-heading">Desserts and Drinks</h2>
-    <ul class="menu-list">
-        <li>Bhapa sondesh</li>  
-                        <li>Aam er shorbot</li> 
-                        <li>Payesh</li> 
-                        <li>Shimaier payesh</li> 
-                        <li>Doi er ghol (Lassi)</li>
-      </ul>
+    
+    <div class="menu-item">Bhapa Sondesh (4)   - £6 </div>
+    <div class="description">A luscious, steamed Bengali sweet delicacy made from freshly curdled chhana (cottage 
+        cheese) and a hint of jaggery or sugar, offering a soft, melt-in-the-mouth texture and subtle 
+        sweetness. Perfect for those who prefer light and refined desserts.</div>
+
+    <div class="menu-item">Aam er Shorbot - £4</div>
+    <div class="description">A refreshing summer drink made with tangy raw mango pulp, spiced with a dash of black salt, 
+        sugar, and chilled water, delivering the perfect balance of sweet and sour notes to beat the 
+        heat. 
+         </div>
+
+    <div class="menu-item">Payesh  - £5</div>
+    <div class="description">The quintessential Bengali rice pudding, slow-cooked with aromatic Gobindobhog rice, 
+        creamy milk, and fragrant cardamom, sweetened with sugar or jaggery and garnished with 
+        nuts for a rich, festive treat. </div>
+
+    <div class="menu-item">Shimaier Payesh - £6</div>
+    <div class="description">A decadent semolina-based milk pudding cooked to a silky consistency, infused with 
+        cardamom and occasionally garnished with raisins and cashews for added texture and flavor. </div>
+
+    <div class="menu-item">Doi Er Ghol (Lassi) - £3</div>
+    <div class="description">A refreshing, smooth yogurt-based drink served chilled, lightly sweetened, and perfect for 
+        cooling down on a hot day or after a hearty meal. </div>
+
+    <div class="menu-item">Soft Drinks   - £2</div>
+    <div class="description">A variety of popular carbonated beverages to accompany your meals.</div>
+
+   
   </div>
 
-  <!-- Footer -->
   <footer class="bg-danger text-center text-white py-3">
     <p>&copy; 2025 Bong In Britain. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    $(document).ready(function(){
+      $(".menu-item").click(function(){
+        $(this).next(".description").slideToggle();
+      });
+    });
+  </script>
+
 </body>
 </html>
