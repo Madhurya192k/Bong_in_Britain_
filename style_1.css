@@ -34,4 +34,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #a71d2a;
 }
 
-/* Additional styles from the original CSS remain unchanged */
+/* Image Adjustment to Fit the Width of the Page */
+img {
+  width: 100%;
+  height: auto;
+}
