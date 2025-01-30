@@ -5,37 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Appetizers | Bong In Britain</title>
   <link rel="stylesheet" href="style_categories.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .menu-item {
+      background: #f8d7da;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .description {
+      display: none;
+      background: #fff3cd;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
       <a class="navbar-brand" href="index.html">Bong In Britain</a>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <div class="container py-5">
+  <div class="container">
     <h2 class="menu-heading">Appetizers (Prothom Paate)</h2>
-    <ul class="menu-list">
-      <li>Postor Bora</li>
-      <li>Peyaji (Onion Bhaji)</li>
-      <li>Maacher Dimer Bora</li>
-      <li>Chingri Maacher Bora</li>
-      <li>Mangsher Chop (Chicken)</li>
-      <li>Homemade Chicken Sandwich</li>
-      <li>Chicken Stroganoff (Stew)</li>
-      <li>Cabbage momo (Chicken) with Chicken Clear Soup</li>
-      <li>Dacres Lane Chicken Stew with Bread Toast</li>
-      <li>Kolkata Style Chicken Roll</li>
-      <li>Kolkata Style Egg Chicken Roll</li>
-      <li>Kathi Roll</li>
-    </ul>
+    
+    <div class="menu-item">Postor Bora (2pcs) - £5</div>
+    <div class="description">Golden, crispy fritters made from a smooth paste of poppy seeds, mildly spiced and deep-fried to perfection, offering a crunchy, nutty delight.</div>
+
+    <div class="menu-item">Peyaji (Onion Bhaji) (4pcs) - £5</div>
+    <div class="description">Thinly sliced onions coated in a spiced gram flour batter and deep-fried until golden brown—perfectly crispy and savory.</div>
+
+    <div class="menu-item">Maacher Dimer Bora (4pcs) - £5</div>
+    <div class="description">Flavor-packed fritters made with fish eggs, seasoned with spices, and fried until crispy for a burst of unique flavors.</div>
+
+    <div class="menu-item">Chingri Maacher Bora (4pcs) - £5</div>
+    <div class="description">Succulent prawn fritters with a crunchy outer layer and juicy, savory filling, fried to a crisp golden hue.</div>
+
+    <div class="menu-item">Mangsher Chop (Chicken) (2pcs) - £5</div>
+    <div class="description">Spicy minced chicken croquettes coated with breadcrumbs and deep-fried, offering a crunchy exterior and a juicy center.</div>
+
+    <div class="menu-item">Homemade Chicken Sandwich (2pcs) - £5.5</div>
+    <div class="description">Soft bread filled with a flavorful chicken mixture, lightly spiced and perfect for a quick, satisfying bite.</div>
+
+    <div class="menu-item">Chicken Stroganoff (Stew) (4pcs) - £6</div>
+    <div class="description">A comforting chicken stew simmered with creamy sauce and subtle herbs, delivering a hearty European-inspired delight.</div>
+
+    <div class="menu-item">Cabbage Momo (Chicken) with Chicken Clear Soup (6pcs) - £8</div>
+    <div class="description">Steamed cabbage-wrapped dumplings filled with seasoned chicken, served with a warm, flavorful clear soup.</div>
+
+    <div class="menu-item">Dacres Lane Chicken Stew with Bread Toast - £6</div>
+    <div class="description">Kolkata’s legendary light chicken stew served with crispy bread toast—a nostalgic street classic.</div>
+
+    <div class="menu-item">Kolkata Style Chicken Roll (2pcs) - £10</div>
+    <div class="description">Juicy spiced chicken wrapped in a flaky, golden paratha, garnished with tangy sauces and onions.</div>
+
+    <div class="menu-item">Kolkata Style Egg Chicken Roll (2pcs) - £12</div>
+    <div class="description">A delightful twist with the addition of a fried egg, wrapped alongside spiced chicken in a paratha.</div>
+
+    <div class="menu-item">Chicken Kathi Roll (2pcs) - £8</div>
+    <div class="description">Boneless marinated chicken pieces wrapped in soft paratha with onions and a drizzle of sauces.</div>
   </div>
 
-  <!-- Footer -->
   <footer class="bg-danger text-center text-white py-3">
     <p>&copy; 2025 Bong In Britain. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    $(document).ready(function(){
+      $(".menu-item").click(function(){
+        $(this).next(".description").slideToggle();
+      });
+    });
+  </script>
+
 </body>
 </html>
