@@ -3,34 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meals (Thalis) | Bong In Britain</title>
-  <link rel="stylesheet" href="style_categories.css"> <!-- Link to the universal stylesheet -->
+  <title>Meals (Thalis)   | Bong In Britain</title>
+  <link rel="stylesheet" href="style_categories.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .menu-item {
+      background: #f8d7da;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .description {
+      display: none;
+      background: #fff3cd;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container">
       <a class="navbar-brand" href="index.html">Bong In Britain</a>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <div class="container py-5">
-    <h2 class="menu-heading">Meals (Thalis)</h2>
-    <ul class="menu-list">
-      <li>Veg Thali</li>
-      <li>Katla Thali</li>
-      <li>Pabda Thali</li>
-      <li>Chingri Thali</li>
-      <li>Pomfret Thali</li>
-      <li>Mutton Thali</li>
-      <li>Moong Daaler Khichuri (Chingri Bora, Alu Bhaja, Chutney)</li>
-    </ul>
+  <div class="container">
+    <h2 class="menu-heading">Meals (Thalis)  </h2>
+    
+    <div class="menu-item">Veg Thali   - £10 </div>
+    <div class="description">A wholesome vegetarian feast featuring a hearty serving of dal, a seasonal vegetable curry, a 
+        fried item such as crispy peyaji or bori bhaja, steamed rice, and a delightful dessert like 
+        tomator chutney. Perfect for those seeking a balanced and flavorful vegetarian meal. </div>
+
+    <div class="menu-item">Katla Thali - £15</div>
+    <div class="description">A traditional Bengali platter starring a rich Katla Kalia (spicy fish curry with a large piece of 
+        Katla), complemented by moong dal, a seasonal vegetable preparation, steamed rice, a fried 
+        item, and chutney  </div>
+
+    <div class="menu-item">Pabda Thali  - £14</div>
+    <div class="description">This flavorful meal centers around Shorshe Pabda (pabda fish cooked in mustard gravy), 
+        served alongside a comforting bowl of dal, a mildly spiced vegetable dish, fried boris, 
+        steamed rice, and chutney.</div>
+
+    <div class="menu-item">Chingri Thali - £14</div>
+    <div class="description">A seafood lover's delight featuring Chingri Malaikari (prawns in coconut milk gravy), 
+        accompanied by fragrant basmati rice, light dal, stir-fried seasonal vegetables, crispy fries or 
+        boris, and tangy chutney. </div>
+
+    <div class="menu-item">Pomfret Thali  - £14</div>
+    <div class="description">Highlighting the delicious Pomfret fish cooked in a delicately spiced gravy, this platter 
+        includes dal, a vibrant vegetable preparation, steamed rice, a crispy side, and tangy chutney.</div>
+
+    <div class="menu-item">Mutton Thali   - £16</div>
+    <div class="description">A lavish feast with the star dish being Mutton Kosha (slow-cooked, thick-spiced mutton 
+        curry), served with basmati rice, a bowl of comforting dal, a vegetable side, fried potatoes, 
+        and tangy chutney. </div>
+
+    <div class="menu-item">Moong Daaler Khichuri Thali - £12</div>
+    <div class="description">A classic rainy-day comfort meal featuring fragrant moong dal khichuri (rice and lentils 
+        cooked together with spices), crispy prawn fritters (chingri bora), golden fried potatoes, and 
+        tomator chutney.  </div>
   </div>
 
-  <!-- Footer -->
   <footer class="bg-danger text-center text-white py-3">
     <p>&copy; 2025 Bong In Britain. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    $(document).ready(function(){
+      $(".menu-item").click(function(){
+        $(this).next(".description").slideToggle();
+      });
+    });
+  </script>
+
 </body>
 </html>
