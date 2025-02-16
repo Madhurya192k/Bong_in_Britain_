@@ -7,16 +7,26 @@ body {
     color: #333; /* Neutral text color for body */
   }
   
-  /* Navbar */
-  .navbar {
-    background-color: #dc3545; /* Red background for navbar */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-  }
+  /* Reduce the height of the navbar to half its current size */
+.navbar {
+  background-color: #dc3545; /* Keep the red background */
+  height: 40px; /* Reduce height (adjust as needed) */
+  padding: 5px 10px; /* Reduce padding */
+  font-size: 0.8rem; /* Reduce text size slightly */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Keep slight shadow */
+}
+
+/* Adjust navbar brand/logo size */
+.navbar-brand {
+  font-size: 1rem; /* Reduce brand font size */
+  padding: 0; /* Remove extra spacing */
+}
+
   
   /* Main Container */
   .container {
-    max-width: 900px; /* Limit the width for better focus */
-    margin: 0 auto; /* Center-align the container */
+    max-width: 750px; /* Limit the width for better focus */
+    float: left /* Center-align the container */
     padding: 20px; /* Add padding around the container */
   }
   
@@ -27,13 +37,33 @@ body {
     font-size: 2.5rem; /* Larger font size for heading */
     margin-bottom: 30px; /* Add spacing below the heading */
     color: #dc3545; /* Red color for the heading */
+    
+
   }
-  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;  /* Spaces out elements */
+    align-items: flex-start;  /* Aligns items to the top */
+    gap: 20px;  /* Adds spacing between menu and slideshow */
+    padding: 40px;
+}
+
+.menu-container {
+    width: 100%;  /* Takes up half of the width */
+    text-align: left;  /* Aligns text to the left */
+    flex-shrink: 0;
+}
+
+.slideshow-container {
+    width: 20% /* Adjusts width */
+}
+
   /* List Style */
   .menu-list {
     list-style-type: disc; /* Add bullets for list items */
     padding-left: 30px; /* Indent the list items */
     margin: 0; /* Remove default margins */
+      
   }
   
   .menu-list li {
@@ -41,6 +71,7 @@ body {
     font-size: 1.2rem; /* Slightly larger font for readability */
     margin-bottom: 15px; /* Add space between list items */
     color: #333; /* Neutral color for list text */
+     
   }
   
   /* Footer */
@@ -51,4 +82,133 @@ body {
     padding: 15px 0; /* Add padding to the footer */
     font-size: 0.9rem; /* Slightly smaller font for footer */
   }
-  
+  .slideshow-container img {
+    width: 300px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fit without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+.menu-wrapper {
+  display: flex; /* Enables side-by-side layout */
+  align-items: flex-start; /* Aligns items at the top */
+  gap: 20px; /* Adds space between sections */
+  flex-shrink: 0;
+}
+
+.slideshow-container {
+  width: 500px; /* Set a fixed width for the carousel */
+  flex-shrink: 0; /* Prevents resizing */
+}
+
+.carousel-img {
+  width: 100%; /* Makes images fit within the container */
+  height: 200px; /* Ensures uniform height */
+  object-fit: cover; /* Keeps aspect ratio without distortion */
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+.menu-container {
+  flex-grow: 1; /* Allows the menu to take remaining space */
+}
+/* Fix menu width to prevent resizing */
+.menu-container {
+  width: 600px;  /* Fixed width */
+  max-width: 600px; /* Ensures it doesn’t expand */
+  padding-left: 25px;
+  flex-shrink: 0;
+}
+
+/* Ensure descriptions do not cause width changes */
+.description {
+  display: none;  /* Initially hidden */
+  background: #fff3cd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  max-width: 100%;  /* Prevents expanding beyond parent */
+  word-wrap: break-word;  /* Ensures text breaks */
+  white-space: normal;  /* Allows wrapping */
+  overflow-wrap: break-word;
+}
+
+/* Position the carousel closer to the menu and keep it fixed */
+.slideshow-container {
+  width: 400px; /* Keep the increased size */
+  height: 500px; /* Maintain 4:5 aspect ratio */
+  position: fixed; /* Keeps it in place while scrolling */
+  right: 20%; /* Shift it more to the left */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Ensure it's centered properly */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+
+/* Ensure images inside the slideshow scale properly */
+.slideshow-container img {
+  width: 100%; /* Make images fit the container */
+  height: 100%; /* Ensure correct aspect ratio */
+  object-fit: cover; /* Prevent distortion */
+  border-radius: 10px;
+}
+/* Ensure the page takes full height and pushes footer to the bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push content to take available space, so the footer stays at the bottom */
+.menu-wrapper {
+  flex: 1;
+}
+
+/* Fix the footer at the bottom */
+footer {
+  background-color: #dc3545;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+/* Ensure the page takes full height and allows scrolling */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make sure the content area is scrollable */
+.menu-wrapper {
+  flex: 1;
+  padding-bottom: 60px; /* Prevent content from being hidden behind footer */
+  overflow-y: auto; /* Enable scrolling if needed */
+}
+
+/* Fix the footer at the bottom while allowing scrolling */
+footer {
+  background-color: #dc3545;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px; /* Set fixed height */
+}
+
+/* Ensure the body allows scrolling while keeping footer fixed */
+body {
+  overflow-y: auto;
+  padding-bottom: 60px; /* Adds space so last menu items are visible */
+}
