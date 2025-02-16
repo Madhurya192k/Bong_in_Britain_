@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<!-- Bootstrap JS & jQuery (Ensure it's added before </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Appetizers | Bong In Britain</title>
   <link rel="stylesheet" href="style_categories.css">
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
     body {
@@ -12,9 +20,9 @@
     }
 
     .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
+      max-width:750px;
+      margin-left: 0;
+      padding: 40px;
     }
 
     .menu-item {
@@ -42,46 +50,100 @@
       <a class="navbar-brand" href="index.html">Bong In Britain</a>
     </div>
   </nav>
-
-  <div class="container">
-    <h2 class="menu-heading">Appetizers (Prothom Paate)</h2>
-    
-    <div class="menu-item">Postor Bora (2pcs) - £5</div>
-    <div class="description">Golden, crispy fritters made from a smooth paste of poppy seeds, mildly spiced and deep-fried to perfection, offering a crunchy, nutty delight.</div>
-
-    <div class="menu-item">Peyaji (Onion Bhaji) (4pcs) - £5</div>
-    <div class="description">Thinly sliced onions coated in a spiced gram flour batter and deep-fried until golden brown—perfectly crispy and savory.</div>
-
-    <div class="menu-item">Maacher Dimer Bora (4pcs) - £5</div>
-    <div class="description">Flavor-packed fritters made with fish eggs, seasoned with spices, and fried until crispy for a burst of unique flavors.</div>
-
-    <div class="menu-item">Chingri Maacher Bora (4pcs) - £5</div>
-    <div class="description">Succulent prawn fritters with a crunchy outer layer and juicy, savory filling, fried to a crisp golden hue.</div>
-
-    <div class="menu-item">Mangsher Chop (Chicken) (2pcs) - £5</div>
-    <div class="description">Spicy minced chicken croquettes coated with breadcrumbs and deep-fried, offering a crunchy exterior and a juicy center.</div>
-
-    <div class="menu-item">Homemade Chicken Sandwich (2pcs) - £5.5</div>
-    <div class="description">Soft bread filled with a flavorful chicken mixture, lightly spiced and perfect for a quick, satisfying bite.</div>
-
-    <div class="menu-item">Chicken Stroganoff (Stew) (4pcs) - £6</div>
-    <div class="description">A comforting chicken stew simmered with creamy sauce and subtle herbs, delivering a hearty European-inspired delight.</div>
-
-    <div class="menu-item">Cabbage Momo (Chicken) with Chicken Clear Soup (6pcs) - £8</div>
-    <div class="description">Steamed cabbage-wrapped dumplings filled with seasoned chicken, served with a warm, flavorful clear soup.</div>
-
-    <div class="menu-item">Dacres Lane Chicken Stew with Bread Toast - £6</div>
-    <div class="description">Kolkata’s legendary light chicken stew served with crispy bread toast—a nostalgic street classic.</div>
-
-    <div class="menu-item">Kolkata Style Chicken Roll (2pcs) - £10</div>
-    <div class="description">Juicy spiced chicken wrapped in a flaky, golden paratha, garnished with tangy sauces and onions.</div>
-
-    <div class="menu-item">Kolkata Style Egg Chicken Roll (2pcs) - £12</div>
-    <div class="description">A delightful twist with the addition of a fried egg, wrapped alongside spiced chicken in a paratha.</div>
-
-    <div class="menu-item">Chicken Kathi Roll (2pcs) - £8</div>
-    <div class="description">Boneless marinated chicken pieces wrapped in soft paratha with onions and a drizzle of sauces.</div>
+  <h2 class="menu-heading">Appetizers (Prothom Paate)</h2>
+  <section class="menu-container">
+    <section class="menu-wrapper">
+      <section class="menu-wrapper" style="display: flex; align-items: center;">
+        <!-- Menu Section (Extreme Left) -->
+        <div class="menu-container" style="flex: 1; padding-left: 35px; width: 20%">
+          <div class="menu-item">Postor Bora (2pcs) - £5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          Golden, crispy fritters made from a smooth paste of poppy seeds, mildly spiced and deep-fried to perfection, offering a crunchy, nutty delight.</div>
+      
+          <div class="menu-item">Peyaji (Onion Bhaji) (4pcs) - £5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          Thinly sliced onions coated in a spiced gram flour batter and deep-fried until golden brown—perfectly crispy and savory.</div>
+      
+          <div class="menu-item">Maacher Dimer Bora (4pcs) - £5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          Flavor-packed fritters made with fish eggs, seasoned with spices, and fried until crispy for a burst of unique flavors.</div>
+      
+          <div class="menu-item">Chingri Maacher Bora (4pcs) - £5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          Succulent prawn fritters with a crunchy outer layer and juicy, savory filling, fried to a crisp golden hue.</div>
+      
+          <div class="menu-item">Mangsher Chop (Chicken) (2pcs) - £5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          Spicy minced chicken croquettes coated with breadcrumbs and deep-fried, offering a crunchy exterior and a juicy center.</div>
+      
+          <div class="menu-item">Homemade Chicken Sandwich (2pcs) - £5.5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          Soft bread filled with a flavorful chicken mixture, lightly spiced and perfect for a quick, satisfying bite.</div>
+      
+          <div class="menu-item">Chicken Stroganoff (Stew) (4pcs) - £6</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          A comforting chicken stew simmered with creamy sauce and subtle herbs, delivering a hearty European-inspired delight.</div>
+      
+          <div class="menu-item">Cabbage Momo (Chicken) with Chicken Clear Soup (6pcs) - £8</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          Steamed cabbage-wrapped dumplings filled with seasoned chicken, served with a warm, flavorful clear soup.</div>
+      
+          <div class="menu-item">Dacres Lane Chicken Stew with Bread Toast - £6</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          Kolkata’s legendary light chicken stew served with crispy bread toast—a nostalgic street classic.</div>
+      
+          <div class="menu-item">Kolkata Style Chicken Roll (2pcs) - £10</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          Juicy spiced chicken wrapped in a flaky, golden paratha, garnished with tangy sauces and onions.</div>
+      
+          <div class="menu-item">Kolkata Style Egg Chicken Roll (2pcs) - £12</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          A delightful twist with the addition of a fried egg, wrapped alongside spiced chicken in a paratha.</div>
+      
+          <div class="menu-item">Chicken Kathi Roll (2pcs) - £8</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+          Boneless marinated chicken pieces wrapped in soft paratha with onions and a drizzle of sauces.</div>
+        </div>
+      
+          <!-- Carousel Section (Fixed, Right-Aligned, Enlarged 5:4 Aspect Ratio) -->
+          <div class="slideshow-container" style="width: 400px; height: 500px;">
+    <div id="menuSlideshow" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Appetizers\Image_34.jpg" class="d-block w-100" alt="Menu 1">
+        </div>
+        <div class="carousel-item">
+          <img src="Appetizers\Image_35.jpg"class="d-block w-100" alt="Menu 2">
+        </div>
+        <div class="carousel-item">
+          <img src="Appetizers\Image_41.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+        <div class="carousel-item">
+          <img src="Appetizers\Image_47.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+        <div class="carousel-item">
+          <img src="Appetizers\Image_48.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+        <div class="carousel-item">
+          <img src="Appetizers\Image_50.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+        <div class="carousel-item">
+          <img src="Appetizers\expanded_image.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#menuSlideshow" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#menuSlideshow" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
   </div>
+      </section>
+      </section>
+      </section>
+
+    
 
   <footer class="bg-danger text-center text-white py-3">
     <p>&copy; 2025 Bong In Britain. All Rights Reserved.</p>
