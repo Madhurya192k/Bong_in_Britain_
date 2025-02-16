@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhajis (Bhaja/Torkari)  | Bong In Britain</title>
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<!-- Bootstrap JS & jQuery (Ensure it's added before </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhajis(Bhaja/Torkari) | Bong In Britain</title>
   <link rel="stylesheet" href="style_categories.css">
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
     body {
@@ -12,9 +20,9 @@
     }
 
     .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
+      max-width:750px;
+      margin-left: 0;
+      padding: 40px;
     }
 
     .menu-item {
@@ -42,42 +50,81 @@
       <a class="navbar-brand" href="index.html">Bong In Britain</a>
     </div>
   </nav>
-
-  <div class="container">
-    <h2 class="menu-heading">Bhajis (Bhaja/Torkari) </h2>
-    
-    <div class="menu-item">Lau Chingri  - £6.5 </div>
-    <div class="description">Tender bottle gourd cooked with juicy prawns in a delicately spiced curry.</div>
-
-    <div class="menu-item">Aloo Posto - £6.5</div>
-    <div class="description">Soft, golden potatoes simmered in a creamy poppy seed sauce—a true Bengali classic. </div>
-
-    <div class="menu-item">Maacher Matha Diye Kata Chochori - £8</div>
-    <div class="description">Mixed vegetables cooked with the bold flavors of fish head (Katla/Ilish), creating a traditional 
-      delicacy.</div>
-
-    <div class="menu-item">Paanch Mishali Torkari - £5</div>
-    <div class="description">A medley of five seasonal vegetables, cooked in mustard oil and spices.</div>
-
-    <div class="menu-item">Bori/Chine Badam Diye Sakh Bhaja - £5</div>
-    <div class="description">Stir-fried leafy greens combined with lentil dumplings and crunchy peanuts.</div>
-
-    <div class="menu-item">Aloo Bharta  - £5</div>
-    <div class="description">Mashed boiled potatoes mixed with mustard oil, onions, and green chilies for a comforting, 
-        flavorful side.</div>
-
-    <div class="menu-item">Begun Bharta - £5</div>
-    <div class="description">Smoked and mashed eggplant blended with mustard oil and subtle spices.</div>
-
-    <div class="menu-item">Dim Bharta  - £6</div>
-    <div class="description">Spiced mashed boiled eggs with mustard oil and onions.</div>
-
-    <div class="menu-item">Daal Chingri Bharta  - £6.5</div>
-    <div class="description">A unique mash of prawns and lentils, bursting with savory flavors.</div>
-
-    <div class="menu-item">Loita Maacher Jhuri - £8</div>
-    <div class="description">Shredded Bombay duck fish, stir-fried with spices into a savory dry preparation. </div>
+  <h2 class="menu-heading">Bhajis (Bhaja/Torkari)</h2>
+  <section class="menu-container">
+    <section class="menu-wrapper">
+      <section class="menu-wrapper" style="display: flex; align-items: center;">
+        <!-- Menu Section (Extreme Left) -->
+        <div class="menu-container" style="flex: 1; padding-left: 35px; width: 20%">
+          <div class="menu-item">Lau Chingri - £6.5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Tender bottle gourd cooked with juicy prawns in a delicately spiced curry.</div>
+      
+          <div class="menu-item">Aloo Posto - £6.5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Soft, golden potatoes simmered in a creamy poppy seed sauce—a true Bengali classic.</div>
+      
+          <div class="menu-item">Maacher Matha Diye Kata Chochori - £8</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Mixed vegetables cooked with the bold flavors of fish head (Katla/Ilish), creating a traditional delicacy.</div>
+      
+          <div class="menu-item">Paanch Mishali Torkari - £5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            A medley of five seasonal vegetables, cooked in mustard oil and spices.</div>
+      
+          <div class="menu-item">Bori/Chine Badam Diye Sakh Bhaja - £5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Stir-fried leafy greens combined with lentil dumplings and crunchy peanuts.</div>
+      
+          <div class="menu-item">Aloo Bharta - £5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Mashed boiled potatoes mixed with mustard oil, onions, and green chilies for a comforting, flavorful side.</div>
+      
+          <div class="menu-item">Begun Bharta - £5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Smoked and mashed eggplant blended with mustard oil and subtle spices.</div>
+      
+          <div class="menu-item">Dim Bharta - £6</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Spiced mashed boiled eggs with mustard oil and onions.</div>
+      
+          <div class="menu-item">Daal Chingri Bharta - £6.5</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            A unique mash of prawns and lentils, bursting with savory flavors.</div>
+      
+          <div class="menu-item">Loita Maacher Jhuri - £8</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Shredded Bombay duck fish, stir-fried with spices into a savory dry preparation.</div>
+      
+          
+      
+          <!-- Carousel Section (Fixed, Right-Aligned, Enlarged 5:4 Aspect Ratio) -->
+          <div class="slideshow-container" style="width: 400px; height: 500px;">
+    <div id="menuSlideshow" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="C:\Users\madhu\Desktop\restaurant-website\Images\Menu\Bhaja\Image_8.jpg" class="d-block w-100" alt="Menu 1">
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\madhu\Desktop\restaurant-website\Images\Menu\Bhaja\Image_44.jpg" class="d-block w-100" alt="Menu 2">
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\madhu\Desktop\restaurant-website\Images\Menu\Bhaja\Image_51.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#menuSlideshow" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#menuSlideshow" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
   </div>
+      </section>
+      </section>
+      </section>
+
+    
 
   <footer class="bg-danger text-center text-white py-3">
     <p>&copy; 2025 Bong In Britain. All Rights Reserved.</p>
