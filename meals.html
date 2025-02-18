@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meals (Thalis)   | Bong In Britain</title>
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<!-- Bootstrap JS & jQuery (Ensure it's added before </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meals (Thalis) | Bong In Britain</title>
   <link rel="stylesheet" href="style_categories.css">
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
     body {
@@ -12,9 +20,9 @@
     }
 
     .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
+      max-width:750px;
+      margin-left: 0;
+      padding: 40px;
     }
 
     .menu-item {
@@ -42,44 +50,73 @@
       <a class="navbar-brand" href="index.html">Bong In Britain</a>
     </div>
   </nav>
-
-  <div class="container">
-    <h2 class="menu-heading">Meals (Thalis)  </h2>
-    
-    <div class="menu-item">Veg Thali   - £10 </div>
-    <div class="description">A wholesome vegetarian feast featuring a hearty serving of dal, a seasonal vegetable curry, a 
-        fried item such as crispy peyaji or bori bhaja, steamed rice, and a delightful dessert like 
-        tomator chutney. Perfect for those seeking a balanced and flavorful vegetarian meal. </div>
-
-    <div class="menu-item">Katla Thali - £15</div>
-    <div class="description">A traditional Bengali platter starring a rich Katla Kalia (spicy fish curry with a large piece of 
-        Katla), complemented by moong dal, a seasonal vegetable preparation, steamed rice, a fried 
-        item, and chutney  </div>
-
-    <div class="menu-item">Pabda Thali  - £14</div>
-    <div class="description">This flavorful meal centers around Shorshe Pabda (pabda fish cooked in mustard gravy), 
-        served alongside a comforting bowl of dal, a mildly spiced vegetable dish, fried boris, 
-        steamed rice, and chutney.</div>
-
-    <div class="menu-item">Chingri Thali - £14</div>
-    <div class="description">A seafood lover's delight featuring Chingri Malaikari (prawns in coconut milk gravy), 
-        accompanied by fragrant basmati rice, light dal, stir-fried seasonal vegetables, crispy fries or 
-        boris, and tangy chutney. </div>
-
-    <div class="menu-item">Pomfret Thali  - £14</div>
-    <div class="description">Highlighting the delicious Pomfret fish cooked in a delicately spiced gravy, this platter 
-        includes dal, a vibrant vegetable preparation, steamed rice, a crispy side, and tangy chutney.</div>
-
-    <div class="menu-item">Mutton Thali   - £16</div>
-    <div class="description">A lavish feast with the star dish being Mutton Kosha (slow-cooked, thick-spiced mutton 
-        curry), served with basmati rice, a bowl of comforting dal, a vegetable side, fried potatoes, 
-        and tangy chutney. </div>
-
-    <div class="menu-item">Moong Daaler Khichuri Thali - £12</div>
-    <div class="description">A classic rainy-day comfort meal featuring fragrant moong dal khichuri (rice and lentils 
-        cooked together with spices), crispy prawn fritters (chingri bora), golden fried potatoes, and 
-        tomator chutney.  </div>
+  <h2 class="menu-heading">Meals (Thalis)</h2>
+  <section class="menu-container">
+    <section class="menu-wrapper">
+      <section class="menu-wrapper" style="display: flex; align-items: center;">
+        <!-- Menu Section (Extreme Left) -->
+        <div class="menu-container" style="flex: 1; padding-left: 35px; width: 20%">
+          <div class="menu-item">Veg Thali - £10</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            A wholesome vegetarian feast featuring a hearty serving of dal, a seasonal vegetable curry, a fried item such as crispy peyaji or bori bhaja, steamed rice, and a delightful dessert like tomator chutney. Perfect for those seeking a balanced and flavorful vegetarian meal.</div>
+      
+          <div class="menu-item">Katla Thali - £15</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            A traditional Bengali platter starring a rich Katla Kalia (spicy fish curry with a large piece of Katla), complemented by moong dal, a seasonal vegetable preparation, steamed rice, a fried item, and chutney.</div>
+      
+          <div class="menu-item">Pabda Thali - £14</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            This flavorful meal centers around Shorshe Pabda (pabda fish cooked in mustard gravy), served alongside a comforting bowl of dal, a mildly spiced vegetable dish, fried boris, steamed rice, and chutney.</div>
+      
+          <div class="menu-item">Chingri Thali - £14</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            A seafood lover's delight featuring Chingri Malaikari (prawns in coconut milk gravy), accompanied by fragrant basmati rice, light dal, stir-fried seasonal vegetables, crispy fries or boris, and tangy chutney.</div>
+     
+          <div class="menu-item">Pomfret Thali - £14</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Highlighting the delicious Pomfret fish cooked in a delicately spiced gravy, this platter includes dal, a vibrant vegetable preparation, steamed rice, a crispy side, and tangy chutney.</div>
+      
+          <div class="menu-item">Mutton Thali - £16</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            A lavish feast with the star dish being Mutton Kosha (slow-cooked, thick-spiced mutton curry), served with basmati rice, a bowl of comforting dal, a vegetable side, fried potatoes, and tangy chutney.</div>
+      
+          <div class="menu-item">Moong Daaler Khichuri Thali - £12</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            A classic rainy-day comfort meal featuring fragrant moong dal khichuri (rice and lentils cooked together with spices), crispy prawn fritters (chingri bora), golden fried potatoes, and tomator chutney.</div>
+      
+         
+        </div>
+      
+          <!-- Carousel Section (Fixed, Right-Aligned, Enlarged 5:4 Aspect Ratio) -->
+          <div class="slideshow-container" style="width: 400px; height: 500px;">
+    <div id="menuSlideshow" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/Meals/Image_13.jpg" class="d-block w-100" alt="Menu 1">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Meals/Image_37.jpg" class="d-block w-100" alt="Menu 2">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Meals/Image_38.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Meals/Image_58.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#menuSlideshow" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#menuSlideshow" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
   </div>
+      </section>
+      </section>
+      </section>
+
+    
 
   <footer class="bg-danger text-center text-white py-3">
     <p>&copy; 2025 Bong In Britain. All Rights Reserved.</p>
