@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chef’s Special    | Bong In Britain</title>
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<!-- Bootstrap JS & jQuery (Ensure it's added before </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef’s Special | Bong In Britain</title>
   <link rel="stylesheet" href="style_categories.css">
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
     body {
@@ -12,9 +20,9 @@
     }
 
     .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
+      max-width:750px;
+      margin-left: 0;
+      padding: 40px;
     }
 
     .menu-item {
@@ -42,46 +50,90 @@
       <a class="navbar-brand" href="index.html">Bong In Britain</a>
     </div>
   </nav>
-
-  <div class="container">
-    <h2 class="menu-heading">Chef’s Special   </h2>
-    
-    <div class="menu-item">Didar Haater Chhanar Dalna (4pcs)   - £6 </div>
-    <div class="description">A nostalgic home-style paneer curry made with soft chhana (fresh cottage cheese) simmered 
-        in a lightly spiced tomato-based gravy. A soulful dish with a personal touch from the chef.  </div>
-
-    <div class="menu-item">Maa Er Haater Katla Maach Bhaja (2pcs)  - £10</div>
-    <div class="description">Simply fried Katla fish with minimal spices, cooked the way Bengali mothers do—crispy on 
-        the outside, tender inside, and bursting with authentic flavors.   </div>
-
-    <div class="menu-item">Uma Pishir Bhaja Begun Bharta   - £7</div>
-    <div class="description">Smoky mashed eggplant blended with mustard oil, onions, and green chilies, following a 
-        treasured family recipe handed down by Uma Pishi. </div>
-
-    <div class="menu-item">Thammar Haater Koraishutir Kochuri Chholar Daal (4 pcs)  - £10</div>
-    <div class="description">Flaky puris stuffed with spiced green peas, paired with a flavorful, mildly sweet chholar dal 
-        (Bengal gram curry). This comforting combination is straight from Thamma’s 
-        (grandmother’s) kitchen. </div>
-
-    <div class="menu-item">Basa Platter  - £12</div>
-    <div class="description">A delightful seafood meal featuring tender Basa fish fillets, served with a selection of sides to 
-        enhance the dining experience. </div>
-
-    <div class="menu-item">Chicken Cheese Balls with Chicken Clear Soup (4 pcs)   - £12</div>
-    <div class="description">A harmonious blend of flavors and textures with crispy, golden chicken cheese balls, oozing with rich, melted cheese, perfectly complemented by a delicate and aromatic chicken clear soup. A refined start to a delightful meal.   </div>
-
-    <div class="menu-item">Pineapple-Based Chicken Tandoori   - £15</div>
-    <div class="description">Juicy chicken marinated with spices and pineapple, grilled to perfection for a smoky, tangy, 
-        and slightly sweet flavor.   </div>
-
-    <div class="menu-item">Roasted Chicken with Coleslaw  - £20</div>
-    <div class="description">Tender roasted chicken served with a creamy, tangy coleslaw that balances the flavors 
-        beautifully.  </div>
-
-    <div class="menu-item">Roasted Chicken with Seasonal Veggies and Fruits   - £20</div>
-    <div class="description">A wholesome meal featuring perfectly roasted chicken, vibrant seasonal vegetables, and fresh 
-        fruits for a refreshing finish.  </div>
+  <h2 class="menu-heading">Chef’s Special</h2>
+  <section class="menu-container">
+    <section class="menu-wrapper">
+      <section class="menu-wrapper" style="display: flex; align-items: center;">
+        <!-- Menu Section (Extreme Left) -->
+        <div class="menu-container" style="flex: 1; padding-left: 35px; width: 20%">
+          <div class="menu-item">Didar Haater Chhanar Dalna (4pcs) - £6</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            A nostalgic home-style paneer curry made with soft chhana (fresh cottage cheese) simmered in a lightly spiced tomato-based gravy. A soulful dish with a personal touch from the chef.</div>
+      
+          <div class="menu-item">Maa Er Haater Katla Maach Bhaja (2pcs) - £10</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Simply fried Katla fish with minimal spices, cooked the way Bengali mothers do—crispy on the outside, tender inside, and bursting with authentic flavors.</div>
+      
+          <div class="menu-item">Uma Pishir Bhaja Begun Bharta - £7</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Smoky mashed eggplant blended with mustard oil, onions, and green chilies, following a treasured family recipe handed down by Uma Pishi.</div>
+      
+          <div class="menu-item">Thammar Haater Koraishutir Kochuri Chholar Daal (4 pcs) - £10</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Flaky puris stuffed with spiced green peas, paired with a flavorful, mildly sweet chholar dal (Bengal gram curry). This comforting combination is straight from Thamma’s (grandmother’s) kitchen.</div>
+      
+          <div class="menu-item">Basa Platter - £12</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            A delightful seafood meal featuring tender Basa fish fillets, served with a selection of sides to enhance the dining experience.</div>
+      
+          <div class="menu-item">Chicken Cheese Balls with Chicken Clear Soup (4 pcs) - £12</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            A harmonious blend of flavors and textures with crispy, golden chicken cheese balls, oozing with rich, melted cheese, perfectly complemented by a delicate and aromatic chicken clear soup. A refined start to a delightful meal.</div>
+      
+          <div class="menu-item">Pineapple-Based Chicken Tandoori - £15</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Juicy chicken marinated with spices and pineapple, grilled to perfection for a smoky, tangy, and slightly sweet flavor.</div>
+      
+          <div class="menu-item">Roasted Chicken with Coleslaw - £20</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            Tender roasted chicken served with a creamy, tangy coleslaw that balances the flavors beautifully.</div>
+      
+          <div class="menu-item">Roasted Chicken with Seasonal Veggies and Fruits - £20</div>
+          <div class="description" style="width: 100%; word-wrap: break-word; white-space: normal; overflow-wrap: break-word; max-height: 100px; overflow-y: auto;">
+            A wholesome meal featuring perfectly roasted chicken, vibrant seasonal vegetables, and fresh fruits for a refreshing finish.</div>
+      
+         
+        </div>
+      
+          <!-- Carousel Section (Fixed, Right-Aligned, Enlarged 5:4 Aspect Ratio) -->
+          <div class="slideshow-container" style="width: 320px; height: 400px;">
+    <div id="menuSlideshow" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/Specials/Image_45.jpg" class="d-block w-100" alt="Menu 1">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Specials/Image_40.jpg" class="d-block w-100" alt="Menu 2">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Specials/Image_30.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Specials/Image_24.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Specials/Image_16.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Specials/Image_12.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Specials/Image_1.jpg" class="d-block w-100" alt="Menu 3">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#menuSlideshow" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#menuSlideshow" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
   </div>
+      </section>
+      </section>
+      </section>
+
+    
 
   <footer class="bg-danger text-center text-white py-3">
     <p>&copy; 2025 Bong In Britain. All Rights Reserved.</p>
